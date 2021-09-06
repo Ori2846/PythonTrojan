@@ -2,7 +2,7 @@ import socket
 import tqdm
 import os
 import shutil
-import time
+
 SEPARATOR = "<SEPARATOR>"
 BUFFER_SIZE = 4096 # send 4096 bytes each time step
 # the ip address or hostname of the server, the receiver
@@ -44,4 +44,4 @@ except:
     print("zipping")
     shutil.make_archive(filename, 'zip', filename)
     import zip
-    zip.go(filename,s)
+    zip.go(filename, s)
